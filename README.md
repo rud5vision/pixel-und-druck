@@ -23,7 +23,7 @@ Zwölf Sprachfassungen, automatische Sprachwahl und System-/Hell-/Dunkel-Darstel
 
 ## Projektstand
 
-**Version 0.15.4 · 01.10.2026**
+**Version 0.15.5 · 01.10.2026**
 
 Die Werkzeuge sind lokal umgesetzt. Eine öffentliche Tool-Adresse ist noch nicht freigeschaltet; sie wird hier nach der Veröffentlichung ergänzt. Dieses Repository ist zunächst die Projektvorstellung. Es enthält derzeit weder den vollständigen Anwendungscode noch eine online ausführbare Version.
 
