@@ -1,5 +1,13 @@
 # Änderungen
 
+## 0.22.3 · 03.10.2026
+
+- SDL2-Portquelle ergänzt und gegen den SHA-512 des Emscripten-Ports geprüft.
+- 29 unveränderte Lizenztexte der FFmpeg-Abhängigkeiten und des SDK separat mit Herkunft und Hash verlinkt.
+- Ersatzrezept mit festen Quellständen, SDK-Image-Digest und Compilerflags vorbereitet. Archiv- und Kontextprüfung funktioniert unter Windows; interne Verknüpfungen bleiben innerhalb der Quellen.
+- Sieben Prüfungen der sicheren Buildvorbereitung bestanden. Noch kein Compilerlauf, Austausch des Encoders oder Website-Deploy.
+- 70 Logik- und Buildtests bestanden; sämtliche Werkzeuge und zwölf Sprachen erhalten. Die Medien- und Layoutbelege aus 0.22.2 bleiben Belege für den unveränderten Encoder.
+
 ## 0.22.2 · 03.10.2026
 
 - GIF-Vorschau ohne Worker-Canvas ermöglicht; GIF-Export in Firefox repariert. Vorschau und Export greifen geordnet auf den Decoder zu.

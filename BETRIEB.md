@@ -1,6 +1,6 @@
 # Projektpflege und Veröffentlichung
 
-Stand: 03.10.2026 · Version 0.22.2.
+Stand: 03.10.2026 · Version 0.22.3.
 
 Dieses öffentliche Repository enthält die Projektbeschreibung und Dokumentation. Es enthält keine ausführbare Website und aktiviert kein GitHub Pages. Die Entwicklung wird in einem getrennten privaten Repository gepflegt. Ausgelieferter Browsercode bleibt beim späteren Website-Aufruf einsehbar; private Entwicklung ist keine Kopiersperre. Drittkomponenten behalten ihre Lizenzen und Quellpflichten.
 
@@ -8,7 +8,11 @@ Dieses öffentliche Repository enthält die Projektbeschreibung und Dokumentatio
 
 Cloudflare Pages Free, zunächst eine vom Dienst vergebene pages.dev-Adresse. Eigene Domain später; derzeit wurde keine Domain registriert und kein kostenpflichtiger Tarif eingerichtet. Cloudflare-Anmeldung und tatsächlicher Deploy sind noch offen.
 
-Das vorbereitete statische Paket enthält 561 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
+Das vorbereitete statische Paket enthält 595 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
+
+## FFmpeg-Quellenstand
+
+17 Quellarchive, die zusätzliche SDL2-Portquelle und 29 separat zugängliche Lizenztexte sind per Hash geprüft. Ein Ersatzrezept mit festen Quellständen und SDK-Image-Digest wurde vorbereitet. Der Ersatz wurde noch nicht kompiliert, eingebaut oder veröffentlicht; die ursprüngliche genaue Binär-/Quellenzuordnung bleibt offen. Quellenarchive laden erst auf ausdrücklichen Aufruf; sie gehören nicht zu den Ressourcen beim Seitenstart.
 
 ## Aktualisieren
 

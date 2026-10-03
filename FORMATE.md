@@ -1,4 +1,4 @@
-# Werkzeuge und Formate · 0.22.2
+# Werkzeuge und Formate · 0.22.3
 
 Die Dateiendung beschreibt einen Container oder Dateityp. Enthaltene Codecs, Farbmodelle, Verschlüsselung und Geräteleistung bestimmen zusätzlich, ob eine konkrete Datei funktioniert. Diese Liste ist keine Garantie für jede Variante.
 

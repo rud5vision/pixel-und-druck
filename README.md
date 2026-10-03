@@ -4,7 +4,7 @@
 
 **Druck, Bilder, PDF, GIF, Video und Audio – lokal auf deinem Gerät.**
 
-Kostenloses Hobbyprojekt von [rud5vision](https://github.com/rud5vision). **Version 0.22.2 · 3. Oktober 2026.**
+Kostenloses Hobbyprojekt von [rud5vision](https://github.com/rud5vision). **Version 0.22.3 · 3. Oktober 2026.**
 
 **Projektbeschreibung auf GitHub; die Anwendung ist noch nicht öffentlich freigeschaltet.** Zielhosting: Cloudflare Pages Free. Die Tool-Adresse wird nach geprüftem Deploy ergänzt.
 
@@ -41,6 +41,6 @@ Lokal geprüfte Version ohne Werbung oder kostenpflichtige Funktionen. Chromium,
 
 Die Bildausgabe ist auf 128 MP und 16.000 Pixel je Kante begrenzt; Geräte können früher an Grenzen stoßen. Eine höhere PPI-Zahl erfindet keine Bilddetails. Passwort-PDF-Exporte sind ungeschützt. Die Hintergrundfreistellung gehört nicht zum aktuellen Umfang.
 
-Impressum, Datenschutz und Rechte/Komponenten sind in der lokalen Anwendung vorhanden. Die Betreiberangaben und abschließende Quellenzuordnung des FFmpeg-Pakets bleiben offen. Öffentliche Links werden nach dem Deploy ergänzt.
+Impressum, Datenschutz und Rechte/Komponenten sind in der lokalen Anwendung vorhanden. Die Betreiberangaben und abschließende Quellenzuordnung des FFmpeg-Pakets bleiben offen. Ein geprüftes Quellenpaket mit SDL2-Port und ein festes Ersatzrezept sind vorbereitet; der Neubuild steht noch aus. Öffentliche Links werden nach dem Deploy ergänzt.
 
 [Betrieb, Aktualisierung und Abschalten](BETRIEB.md)
