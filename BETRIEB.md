@@ -10,6 +10,14 @@ Cloudflare Pages Free, zunächst eine vom Dienst vergebene pages.dev-Adresse. Ei
 
 Das vorbereitete statische Paket enthält 597 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
 
+## Cloudflare-Git-Build vorbereiten
+
+Das private Repository `rud5vision/pixel-und-druck-app` wird ausschließlich für Pages freigegeben. Buildbefehl: `node scripts/build-cloudflare.mjs`; Ausgabeverzeichnis: `dist`; Produktionsbranch: `main`; Framework: None; Repository-Wurzel. `.node-version` legt den lokal geprüften Node-Stand 24.19.0 fest. Mit `SKIP_DEPENDENCY_INSTALL=1` entfällt eine unbenötigte Paketinstallation.
+
+Vor dem Build werden in Produktion und Vorschau `LEGAL_PROFILE_JSON` mit der bestätigten Betreiber-/Hostingkonfiguration und `SITE_ORIGIN` mit der echten stabilen Produktionsadresse gesetzt. Das JSON wird im Arbeitsspeicher eingelesen; lokale Konfigurationsdateien und Zugangsdaten kommen nicht ins Repository. Die vorgesehenen Betreiberangaben erscheinen trotzdem in den ausgelieferten Rechtstexten. Das Konfigurationsfeld ist kein Speicher für Passwörter oder API-Token.
+
+Der Einstieg erzwingt die öffentlichen Buildprüfungen auch bei Vorschauen. Fehlende Angaben verhindern den Build. `SITE_INDEXABLE=false` bleibt der erste Stand; `true` kann nur den Branch `main` indexierbar machen. Vorschau-Branches bleiben gesperrt. Die temporäre `CF_PAGES_URL` wird nicht als Canonical verwendet. Erst die tatsächlich vom Host bestätigte Adresse einsetzen. Der Einstieg ist lokal in simulierten Cloudflare-Umgebungen geprüft; eine Ausführung bei Cloudflare und ein Website-Deploy stehen noch aus.
+
 ## FFmpeg-Quellenstand
 
 Der eigene FFmpeg-Neubuild ist erfolgreich erstellt, geprüft und eingebaut. 17 originale Quellarchive, die SDL2-Portquelle und 29 Lizenztexte stimmen mit den ausgeführten Build-Eingaben überein. Eine zusätzliche ZIP-Datei enthält das tatsächlich verwendete Rezept, Vorbereitung/Buildskripte, Compiler-/Konfigurationsnachweise und Medienprüfungen. Das Paket wurde separat rekonstruiert und gegen alle 18 Archive geprüft. Der ausgeführte Neubuild erzeugt JavaScript und WASM bytegleich zum bisherigen Encoder. Technische Quellen-/Binärzuordnung ist damit für diesen Ersatz belegt; dies ist keine rechtliche Gesamtfreigabe oder nachträgliche Bestätigung des früheren npm-Binärpakets. APT und BuildKit sind nicht eingefroren; kein bitidentischer Neubuild zugesagt. Quellenarchive laden erst auf ausdrücklichen Aufruf, nicht beim Seitenstart.

@@ -2,6 +2,7 @@
 
 ## 0.22.4 · 03.10.2026
 
+- Cloudflare-Git-Build ergänzt: bestätigte Konfiguration aus einer Umgebungsvariable, öffentliche Freigabeprüfungen für alle Deployments und getrennte Indexierung von Produktion/Vorschau. Anmeldung und Website-Deploy bleiben offen.
 - Eigener FFmpeg-Neubuild mit festgelegten Quellen, SDK-Digest und Compilerflags erfolgreich erstellt und eingebaut; ursprünglicher Encoder lokal gesichert.
 - 20 Medienausgabeformate im Chromium-Prüflauf sowie MP4/WebM/MP3 in Firefox und WebKit getestet. Insgesamt 32 echte Ausgaben unabhängig dekodiert; Import, Kürzen, Sprachwechsel und Abbruch/Retry geprüft.
 - Quellarchive, 29 Original-Lizenztexte, ausführbare Vorbereitung/Buildskripte und tatsächliche Buildnachweise gemeinsam bereitgestellt. Quellenpaket separat rekonstruiert und alle 18 Eingaben erneut geprüft.
