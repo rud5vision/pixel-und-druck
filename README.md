@@ -4,7 +4,7 @@
 
 **Druck, Bilder, PDF, GIF, Video und Audio – lokal auf deinem Gerät.**
 
-Kostenloses Hobbyprojekt von [rud5vision](https://github.com/rud5vision). **Version 0.22.1 · 3. Oktober 2026.**
+Kostenloses Hobbyprojekt von [rud5vision](https://github.com/rud5vision). **Version 0.22.2 · 3. Oktober 2026.**
 
 **Projektbeschreibung auf GitHub; die Anwendung ist noch nicht öffentlich freigeschaltet.** Zielhosting: Cloudflare Pages Free. Die Tool-Adresse wird nach geprüftem Deploy ergänzt.
 
@@ -37,7 +37,7 @@ Dieses Projektprofil wird von GitHub bereitgestellt. Die Anwendung soll über Cl
 
 ## Projektstand und Grenzen
 
-Lokal geprüfte Version ohne Werbung oder kostenpflichtige Funktionen. Der Suchanfragen-Abgleich und die Veröffentlichungsvorbereitung laufen. Rechtstexte bleiben als unvollständiger Entwurf sichtbar; Suchmaschinenfreigabe ist zunächst aus. Es gibt keine Zusage für Rankings oder eine bestimmte Geräte-/Dateikompatibilität.
+Lokal geprüfte Version ohne Werbung oder kostenpflichtige Funktionen. Chromium, Firefox und WebKit wurden mit echten Ausgaben geprüft; das ersetzt keinen Test auf einem physischen Handy. Der Suchanfragen-Abgleich und die Veröffentlichungsvorbereitung laufen. Rechtstexte bleiben als unvollständiger Entwurf sichtbar; Suchmaschinenfreigabe ist zunächst aus. Es gibt keine Zusage für Rankings oder eine bestimmte Geräte-/Dateikompatibilität.
 
 Die Bildausgabe ist auf 128 MP und 16.000 Pixel je Kante begrenzt; Geräte können früher an Grenzen stoßen. Eine höhere PPI-Zahl erfindet keine Bilddetails. Passwort-PDF-Exporte sind ungeschützt. Die Hintergrundfreistellung gehört nicht zum aktuellen Umfang.
 

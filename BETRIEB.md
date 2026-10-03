@@ -1,21 +1,21 @@
 # Projektpflege und Veröffentlichung
 
-Stand: 03.10.2026 · Version 0.22.1.
+Stand: 03.10.2026 · Version 0.22.2.
 
-Dieses öffentliche Repository enthält die Projektbeschreibung und Dokumentation. Es enthält keine ausführbare Website und aktiviert kein GitHub Pages. Die Entwicklung soll in einem getrennten privaten Repository gepflegt werden. Ausgelieferter Browsercode bleibt beim späteren Website-Aufruf einsehbar; private Entwicklung ist keine Kopiersperre. Drittkomponenten behalten ihre Lizenzen und Quellpflichten.
+Dieses öffentliche Repository enthält die Projektbeschreibung und Dokumentation. Es enthält keine ausführbare Website und aktiviert kein GitHub Pages. Die Entwicklung wird in einem getrennten privaten Repository gepflegt. Ausgelieferter Browsercode bleibt beim späteren Website-Aufruf einsehbar; private Entwicklung ist keine Kopiersperre. Drittkomponenten behalten ihre Lizenzen und Quellpflichten.
 
 ## Vorgesehener Hostingweg
 
 Cloudflare Pages Free, zunächst eine vom Dienst vergebene pages.dev-Adresse. Eigene Domain später; derzeit wurde keine Domain registriert und kein kostenpflichtiger Tarif eingerichtet. Cloudflare-Anmeldung und tatsächlicher Deploy sind noch offen.
 
-Das vorbereitete statische Paket enthält 560 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
+Das vorbereitete statische Paket enthält 561 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
 
 ## Aktualisieren
 
 1. Quelle ändern. `dist/*.mjs` sind zum Teil echte Quellen; den Ordner nicht pauschal löschen.
 2. Lokal bauen und die betroffenen Funktionen einschließlich echter Ausgaben prüfen. Zwölf Sprachen und vorhandene Werkzeuge erhalten.
 3. Für Cloudflare am Root-Pfad `/` bauen. Nach Vergabe der tatsächlichen Adresse `SITE_ORIGIN` darauf setzen. Keine Beispieldomain verwenden.
-4. Vor Indexfreigabe Betreiber-/Hostingprofil und FFmpeg-Quellenzuordnung abschließen. `SITE_INDEXABLE=true` und `PUBLIC_RELEASE=true` sind eigene, überprüfte Freigabeschritte.
+4. Vor Indexfreigabe Betreiber-/Hostingprofil und FFmpeg-Quellenzuordnung abschließen. `SITE_INDEXABLE=true` und `PUBLIC_RELEASE=true` sind eigene, überprüfte Freigabeschritte. Der Build prüft jetzt beide Quellennachweise zusätzlich zum Betreiberprofil und zur echten Websiteadresse.
 5. Geprüften Stand veröffentlichen. Deploymentstatus und ausgelieferte Version kontrollieren; danach Canonical, Sprachverweise und Sitemap überprüfen.
 6. README, Formate und Änderungsverlauf zusammen aktualisieren. Private Konfigurationen, Zugangsdaten, Nutzermedien und Testdateien bleiben außerhalb dieser öffentlichen Dokumentation.
 

@@ -1,5 +1,14 @@
 # Änderungen
 
+## 0.22.2 · 03.10.2026
+
+- GIF-Vorschau ohne Worker-Canvas ermöglicht; GIF-Export in Firefox repariert. Vorschau und Export greifen geordnet auf den Decoder zu.
+- Abbruch, erneuter Export sowie Transparenz und Bildüberlagerungen in drei Browser-Engines geprüft.
+- Kontraste im Druck-Zuschnitt und im PPI-Symbol verbessert; Wallpaper-Vorschau für Hilfstechnologien korrekt bezeichnet.
+- Piko und Neuigkeiten in allen zwölf Sprachen aktualisiert.
+- Öffentlicher Build stoppt auch bei unvollständigen FFmpeg-Quellennachweisen.
+- 67 automatisierte Logiktests, 81 Layoutansichten, 27 automatisierte Zugänglichkeitsprüfungen und 46 unabhängig dekodierte Ausgabedateien bestanden. Physische Handys bleiben offen.
+
 ## 0.22.1 · 03.10.2026
 
 - Zielhosting wieder auf Cloudflare Pages Free ausgerichtet; lokale Rechtstexte behaupten keinen erfolgten GitHub-Deploy.
