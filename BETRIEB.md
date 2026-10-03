@@ -1,6 +1,6 @@
 # Projektpflege und Veröffentlichung
 
-Stand: 03.10.2026 · Version 0.22.3.
+Stand: 03.10.2026 · Version 0.22.4.
 
 Dieses öffentliche Repository enthält die Projektbeschreibung und Dokumentation. Es enthält keine ausführbare Website und aktiviert kein GitHub Pages. Die Entwicklung wird in einem getrennten privaten Repository gepflegt. Ausgelieferter Browsercode bleibt beim späteren Website-Aufruf einsehbar; private Entwicklung ist keine Kopiersperre. Drittkomponenten behalten ihre Lizenzen und Quellpflichten.
 
@@ -8,18 +8,18 @@ Dieses öffentliche Repository enthält die Projektbeschreibung und Dokumentatio
 
 Cloudflare Pages Free, zunächst eine vom Dienst vergebene pages.dev-Adresse. Eigene Domain später; derzeit wurde keine Domain registriert und kein kostenpflichtiger Tarif eingerichtet. Cloudflare-Anmeldung und tatsächlicher Deploy sind noch offen.
 
-Das vorbereitete statische Paket enthält 595 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
+Das vorbereitete statische Paket enthält 597 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
 
 ## FFmpeg-Quellenstand
 
-17 Quellarchive, die zusätzliche SDL2-Portquelle und 29 separat zugängliche Lizenztexte sind per Hash geprüft. Ein Ersatzrezept mit festen Quellständen und SDK-Image-Digest wurde vorbereitet. Der Ersatz wurde noch nicht kompiliert, eingebaut oder veröffentlicht; die ursprüngliche genaue Binär-/Quellenzuordnung bleibt offen. Quellenarchive laden erst auf ausdrücklichen Aufruf; sie gehören nicht zu den Ressourcen beim Seitenstart.
+Der eigene FFmpeg-Neubuild ist erfolgreich erstellt, geprüft und eingebaut. 17 originale Quellarchive, die SDL2-Portquelle und 29 Lizenztexte stimmen mit den ausgeführten Build-Eingaben überein. Eine zusätzliche ZIP-Datei enthält das tatsächlich verwendete Rezept, Vorbereitung/Buildskripte, Compiler-/Konfigurationsnachweise und Medienprüfungen. Das Paket wurde separat rekonstruiert und gegen alle 18 Archive geprüft. Der ausgeführte Neubuild erzeugt JavaScript und WASM bytegleich zum bisherigen Encoder. Technische Quellen-/Binärzuordnung ist damit für diesen Ersatz belegt; dies ist keine rechtliche Gesamtfreigabe oder nachträgliche Bestätigung des früheren npm-Binärpakets. APT und BuildKit sind nicht eingefroren; kein bitidentischer Neubuild zugesagt. Quellenarchive laden erst auf ausdrücklichen Aufruf, nicht beim Seitenstart.
 
 ## Aktualisieren
 
 1. Quelle ändern. `dist/*.mjs` sind zum Teil echte Quellen; den Ordner nicht pauschal löschen.
 2. Lokal bauen und die betroffenen Funktionen einschließlich echter Ausgaben prüfen. Zwölf Sprachen und vorhandene Werkzeuge erhalten.
 3. Für Cloudflare am Root-Pfad `/` bauen. Nach Vergabe der tatsächlichen Adresse `SITE_ORIGIN` darauf setzen. Keine Beispieldomain verwenden.
-4. Vor Indexfreigabe Betreiber-/Hostingprofil und FFmpeg-Quellenzuordnung abschließen. `SITE_INDEXABLE=true` und `PUBLIC_RELEASE=true` sind eigene, überprüfte Freigabeschritte. Der Build prüft jetzt beide Quellennachweise zusätzlich zum Betreiberprofil und zur echten Websiteadresse.
+4. Vor Indexfreigabe Betreiber-/Hostingprofil abschließen; die geprüfte FFmpeg-Quellenzuordnung beim Update erhalten. `SITE_INDEXABLE=true` und `PUBLIC_RELEASE=true` sind eigene, überprüfte Freigabeschritte. Der Build prüft jetzt beide Quellennachweise zusätzlich zum Betreiberprofil und zur echten Websiteadresse.
 5. Geprüften Stand veröffentlichen. Deploymentstatus und ausgelieferte Version kontrollieren; danach Canonical, Sprachverweise und Sitemap überprüfen.
 6. README, Formate und Änderungsverlauf zusammen aktualisieren. Private Konfigurationen, Zugangsdaten, Nutzermedien und Testdateien bleiben außerhalb dieser öffentlichen Dokumentation.
 

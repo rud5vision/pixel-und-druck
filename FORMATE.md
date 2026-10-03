@@ -1,4 +1,4 @@
-# Werkzeuge und Formate · 0.22.3
+# Werkzeuge und Formate · 0.22.4
 
 Die Dateiendung beschreibt einen Container oder Dateityp. Enthaltene Codecs, Farbmodelle, Verschlüsselung und Geräteleistung bestimmen zusätzlich, ob eine konkrete Datei funktioniert. Diese Liste ist keine Garantie für jede Variante.
 
@@ -29,3 +29,6 @@ Die Dateiendung beschreibt einen Container oder Dateityp. Enthaltene Codecs, Far
 Bildausgabe maximal 128 Megapixel und 16.000 Pixel je Kante; kleinere Browsergrenzen sind möglich. Ab 24 MP erscheint ein Speicherhinweis. Vorschau und Export arbeiten mit unterschiedlichen Auflösungen; exportiert wird aus der Originalquelle. Downloads zeigen vor dem Speichern die tatsächlich erzeugte Dateigröße.
 
 Große PDF-, Animations- und Videoaufgaben besitzen weitere sichtbare Grenzen. Chromium, Firefox und die Playwright-WebKit-Engine wurden unter Windows mit acht Bild-/Dokumentformaten, GIF, Passwort-PDF sowie MP4/WebM/MP3 geprüft. Das getestete WebKit besitzt keinen Decoder für animiertes WebP; hierfür erscheint ein konkreter Browserhinweis. Physische Handys und sämtliche Safari-/Firefox-Varianten sind nicht allgemein abgenommen.
+
+
+Der eigene FFmpeg-Neubuild wurde in Chromium mit sämtlichen 20 angebotenen Medienausgabeformaten geprüft. Firefox und WebKit prüften MP4, WebM und MP3 sowie Import, Kürzen, Sprachwechsel und Abbruch/Retry. Alle 32 entstandenen Ausgaben wurden separat mit nativer FFmpeg-Software oder Pillow vollständig dekodiert. Dies bestätigt die getesteten Dateien und Einstellungen; es ist keine Zusage für jede Container-/Codecvariante.

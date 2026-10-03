@@ -1,5 +1,13 @@
 # Änderungen
 
+## 0.22.4 · 03.10.2026
+
+- Eigener FFmpeg-Neubuild mit festgelegten Quellen, SDK-Digest und Compilerflags erfolgreich erstellt und eingebaut; ursprünglicher Encoder lokal gesichert.
+- 20 Medienausgabeformate im Chromium-Prüflauf sowie MP4/WebM/MP3 in Firefox und WebKit getestet. Insgesamt 32 echte Ausgaben unabhängig dekodiert; Import, Kürzen, Sprachwechsel und Abbruch/Retry geprüft.
+- Quellarchive, 29 Original-Lizenztexte, ausführbare Vorbereitung/Buildskripte und tatsächliche Buildnachweise gemeinsam bereitgestellt. Quellenpaket separat rekonstruiert und alle 18 Eingaben erneut geprüft.
+- Zehn Prüfungen der Buildvorbereitung und 72 Logik-/Buildtests bestanden. Veränderte Encoderdateien oder ein falsches Rezeptpaket verhindern eine bestätigte Herkunftsangabe.
+- Neun Werkzeugreiter und zwölf Sprachen erhalten. Betreiber-/Hostingangaben, physische Handys, Indexierung und Website-Deploy bleiben eigene Schritte. Kein kostenpflichtiger Tarif eingerichtet.
+
 ## 0.22.3 · 03.10.2026
 
 - SDL2-Portquelle ergänzt und gegen den SHA-512 des Emscripten-Ports geprüft.
