@@ -6,7 +6,7 @@ Dieses öffentliche Repository enthält die Projektbeschreibung und Dokumentatio
 
 ## Vorgesehener Hostingweg
 
-Cloudflare Pages Free, zunächst eine vom Dienst vergebene pages.dev-Adresse. Eigene Domain später; derzeit wurde keine Domain registriert und kein kostenpflichtiger Tarif eingerichtet. Cloudflare-Anmeldung und tatsächlicher Deploy sind noch offen.
+Cloudflare Pages Free, zunächst eine vom Dienst vergebene pages.dev-Adresse. Eigene Domain später; derzeit wurde keine Domain registriert und kein kostenpflichtiger Tarif eingerichtet. Die Verbindung des privaten Repositorys mit Pages und der tatsächliche Deploy sind noch offen.
 
 Das vorbereitete statische Paket enthält 597 Dateien. Die größte Datei ist 16 MiB groß. Das HarfBuzz-Quellarchiv wurde von etwa 31,4 auf 15,5 MiB verlustfrei umkomprimiert; der entpackte Inhalt blieb per SHA-256 identisch. `.nojekyll` bleibt enthalten, hebt aber keine Hostinggrenze auf.
 
